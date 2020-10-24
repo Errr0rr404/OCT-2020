@@ -11,11 +11,11 @@ public class HashTablePractice {
     public static void main(String[] args) {
 
         Hashtable<Integer, String> student = new Hashtable<>();
-        student.put(32,"Jafor");
-        student.put(53,"Sraboni");
-        student.put(12,"David");
+        student.put(32, "Jafor");
+        student.put(53, "Sraboni");
+        student.put(12, "David");
         //student.put(null,"Jafor");
-        student.put(424,null);
+        student.put(424, null);
         System.out.println(student);
     }
 }

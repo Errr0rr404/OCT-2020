@@ -11,7 +11,7 @@ public class ArrayListPractice2 {
         cityOfUSA.add("New Jersey");
         cityOfUSA.add("Virginia");
 
-        ArrayList<String> cityOfCanada= new ArrayList<>();
+        ArrayList<String> cityOfCanada = new ArrayList<>();
         cityOfCanada.add("Toronto");
         cityOfCanada.add("Montreal");
         cityOfCanada.add("Victoria");

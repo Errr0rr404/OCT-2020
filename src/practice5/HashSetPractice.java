@@ -14,14 +14,14 @@ public class HashSetPractice {
         cities.add("Jamaica");
         cities.add("Rego Park");
         cities.add("Medford");
-       // System.out.println(cities);
+        // System.out.println(cities);
 
 
         Iterator iterator = cities.iterator();
 
         ArrayList<String> listOfCity = new ArrayList<>();
 
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             String city = iterator.next().toString();
             listOfCity.add(city);
         }
