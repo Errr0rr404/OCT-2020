@@ -1,6 +1,6 @@
 package practice4.oop.abstraction;
 
-public class LucidAir extends RunableCar {
+public class LucidAir extends RunableCarFord {
 
 
     // method overriding -- same method name,same params, in the different class

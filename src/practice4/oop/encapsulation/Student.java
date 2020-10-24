@@ -8,11 +8,36 @@ public class Student {
 
     private String nameOfStudent;
     private int idOfStudent;
+    private String location;
+    private String gender;
+
 
     // homework
     private String ssn;
-    private String location;
-    private String gender;
+
+    public String getSsn() {
+        return ssn;
+    }
+
+    public void setSsn(String ssn) {
+        this.ssn = ssn;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
 
     // getter method
     public String getNameOfStudent() {

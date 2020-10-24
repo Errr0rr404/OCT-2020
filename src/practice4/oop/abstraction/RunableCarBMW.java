@@ -1,6 +1,6 @@
 package practice4.oop.abstraction;
 
-public class RunableCar extends Car implements Vehicle, Vehicle2 {
+public class RunableCarBMW extends Car implements Vehicle, Vehicle2 {
 
     // i - i
     // implements - interface
@@ -14,7 +14,7 @@ public class RunableCar extends Car implements Vehicle, Vehicle2 {
 
     @Override
     public void wheels() {
-        System.out.println("4 wheels");
+        System.out.println("6 wheels");
     }
 
     @Override
@@ -43,4 +43,8 @@ public class RunableCar extends Car implements Vehicle, Vehicle2 {
         System.out.println("car has windows");
     }
 
+    @Override
+    public void key() {
+
+    }
 }
