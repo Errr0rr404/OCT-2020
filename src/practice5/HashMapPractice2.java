@@ -29,5 +29,8 @@ public class HashMapPractice2 {
         list.add(cityAndZipOfCanada);
         list.add(cityAndZipOfUSA);
         System.out.println(list);
+
+
+        HashMap<Integer, HashMap<String, String>> students = new HashMap();
     }
 }
