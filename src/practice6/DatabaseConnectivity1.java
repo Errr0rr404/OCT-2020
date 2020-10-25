@@ -1,8 +1,9 @@
 package practice6;
 
 import java.sql.*;
+import java.util.ArrayList;
 
-public class DatabaseConnectivity {
+public class DatabaseConnectivity1 {
 
     public static void main(String[] args) throws SQLException {
 
@@ -15,7 +16,8 @@ public class DatabaseConnectivity {
         //jdbc:mysql -- drivername
         //localhost -- host of the db
         //3306 -- port number of the db
-        String url = "jdbc:mysql://localhost:3306/" + dbName;
+        //?serverTimezone=UTC -- only if it gave you the server time zone value is unrecognized
+        String url = "jdbc:mysql://localhost:3306/" + dbName+"?serverTimezone=UTC";
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -27,14 +29,27 @@ public class DatabaseConnectivity {
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery(query);
 
+
+        ArrayList<ArrayList<Object>> studentInformation = new ArrayList<>();
         while (resultSet.next()) {
             int id = resultSet.getInt("id");
             String name = resultSet.getString("name");
             String location = resultSet.getString("location");
 
-            System.out.println(id + " " + name + " " + location);
+            ArrayList<Object> student = new ArrayList<>();
+            student.add(id);
+            student.add(name);
+            student.add(location);
+
+            studentInformation.add(student);
         }
 
+
+        System.out.println(studentInformation);
+
+        // Try to store into :
+        //  - Hashmap<String,String>
+        //  - Hashmap<Integer, Hashmap<Integer,String>>
 
     }
 }
