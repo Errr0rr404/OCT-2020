@@ -12,7 +12,6 @@ public class FileUtils {
 
 
     public static void main(String[] args) throws IOException {
-
         Properties properties = new Properties();
 
         InputStream inputStream = new FileInputStream("src/practice6/lib/config.properties");
@@ -23,7 +22,6 @@ public class FileUtils {
         String dbName = properties.getProperty("dbName");
 
         System.out.println(username + " " + password + " " + dbName);
-
 
     }
 }

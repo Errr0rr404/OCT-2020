@@ -17,7 +17,7 @@ public class DatabaseConnectivity1 {
         //localhost -- host of the db
         //3306 -- port number of the db
         //?serverTimezone=UTC -- only if it gave you the server time zone value is unrecognized
-        String url = "jdbc:mysql://localhost:3306/" + dbName+"?serverTimezone=UTC";
+        String url = "jdbc:mysql://localhost:3306/" + dbName + "?serverTimezone=UTC";
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -27,21 +27,21 @@ public class DatabaseConnectivity1 {
 
         Connection connection = DriverManager.getConnection(url, username, password);
         Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery(query);
+        ResultSet table = statement.executeQuery(query);
 
 
         ArrayList<ArrayList<Object>> studentInformation = new ArrayList<>();
-        while (resultSet.next()) {
-            int id = resultSet.getInt("id");
-            String name = resultSet.getString("name");
-            String location = resultSet.getString("location");
+        while (table.next()) {
+            int id = table.getInt("id");
+            String name = table.getString("name");
+            String location = table.getString("location");
 
-            ArrayList<Object> student = new ArrayList<>();
-            student.add(id);
-            student.add(name);
-            student.add(location);
+            ArrayList<Object> students = new ArrayList<>();
+            students.add(id);
+            students.add(name);
+            students.add(location);
 
-            studentInformation.add(student);
+            studentInformation.add(students);
         }
 
 
