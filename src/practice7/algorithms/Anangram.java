@@ -6,8 +6,8 @@ public class Anangram {
 //Zann
 
     public static void main(String[] args) {
-        String a = "aRMY";
-        String b = "MARy";
+        String a = "ARMY";
+        String b = "MARY";
 
         boolean anangram = checkIfStringsAreAnangram(a, b);
 
