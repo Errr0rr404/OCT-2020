@@ -4,7 +4,7 @@ public class ReversedString {
 
     public static void main(String[] args) {
 
-        String data = "application";
+        String data =  "application";
 
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(data);
