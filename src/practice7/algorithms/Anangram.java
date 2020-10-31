@@ -3,7 +3,8 @@ package practice7.algorithms;
 import java.util.Arrays;
 
 public class Anangram {
-//Ahmed
+//Zann
+
     public static void main(String[] args) {
         String a = "aRMY";
         String b = "MARy";
