@@ -3,7 +3,6 @@ package practice7.algorithms;
 import java.util.Arrays;
 
 public class Anangram {
-//Zann
 
     public static void main(String[] args) {
         String a = "ARMY";
