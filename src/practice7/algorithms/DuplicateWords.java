@@ -10,17 +10,17 @@ public class DuplicateWords {
     public static void main(String[] args) {
         String data = "Java is a programming language . Java is also an island of indonesia . Java is widely used language in development .";
 
-        String [] splittedData = data.split(" ");
+        String[] splittedData = data.split(" ");
 
-        HashMap<String,Integer> occurences =  new HashMap<>();
+        HashMap<String, Integer> occurences = new HashMap<>();
 
-        for(int i=0;i<splittedData.length;i++) {
+        for (int i = 0; i < splittedData.length; i++) {
             Integer previousCount = occurences.get(splittedData[i]);
-            if(previousCount==null){
-                previousCount=0;
+            if (previousCount == null) {
+                previousCount = 0;
             }
 
-            occurences.put(splittedData[i],previousCount+1);
+            occurences.put(splittedData[i], previousCount + 1);
         }
 
         System.out.println(occurences);
